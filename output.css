@@ -849,12 +849,20 @@ video {
   height: 1.25rem;
 }
 
+.h-8{
+  height: 2rem;
+}
+
 .w-10{
   width: 2.5rem;
 }
 
 .w-5{
   width: 1.25rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .w-\[100\%\]{
@@ -1984,6 +1992,10 @@ video {
   background-origin: content-box;
 }
 
+.fill-offwhite{
+  fill: #f5fadf;
+}
+
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
@@ -2042,6 +2054,11 @@ video {
   padding-right: 2rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-14{
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -2052,19 +2069,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .pt-2{
@@ -2613,6 +2620,57 @@ body {
 
 .second-line{
   background: url(./assets/line.svg);
+}
+
+#whatsapp .whtsapp {
+  position: fixed;
+  transform: all 0.5s ease;
+  background-color: #26CC64;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  border-right: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  bottom: 70px;
+  left: 40px;
+  border: 0;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+}
+
+#whatsapp .whtsapp:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 70px;
+  height: 70px;
+  background-color: #25ae57;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+#whatsapp .whtsapp:focus {
+  border: none;
+  outline: none;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
 }
 
 @media (min-width: 640px){
