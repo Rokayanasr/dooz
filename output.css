@@ -2069,6 +2069,10 @@ video {
   padding-top: 0.5rem;
 }
 
+.pt-8{
+  padding-top: 2rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -2770,6 +2774,10 @@ body {
   .md\:py-24{
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .md\:pt-14{
+    padding-top: 3.5rem;
   }
 
   .md\:text-5xl{
