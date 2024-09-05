@@ -862,6 +862,22 @@ video {
   height: 100%;
 }
 
+.h-80{
+  height: 20rem;
+}
+
+.h-44{
+  height: 11rem;
+}
+
+.h-32{
+  height: 8rem;
+}
+
+.h-36{
+  height: 9rem;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -892,6 +908,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-44{
+  width: 11rem;
 }
 
 .max-w-screen-xl{
@@ -2787,6 +2807,16 @@ body {
 }
 
 @media (min-width: 640px){
+  .sm\:h-fit{
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .sm\:underline{
     text-decoration-line: underline;
   }
