@@ -5,8 +5,9 @@ module.exports = {
     extend: {},
     colors:{
       "mint": "#a0bf88",
-      "offwhite": "#f5fadf",
-      "brown": "#7e6427"
+      "offwhite": "#f8f9ef",
+      "brown": "#7e6427",
+      "darkmint":"#8aa375"
     }
   },
   plugins: [],

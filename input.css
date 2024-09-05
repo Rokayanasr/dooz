@@ -10,63 +10,19 @@ body {
     font-family: "Cairo", sans-serif;
     box-sizing: border-box;
 }
-
-.header-bg{
-    background: url('./assets/header.png');
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-}
-.second-line{
-    background: url(./assets/line.svg);
-}
-#whatsapp .whtsapp {
-    position: fixed;
-    transform: all 0.5s ease;
-    background-color: #26CC64;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    border-radius: 50px;
-    border-right: none;
-    color: #fff;
-    font-weight: 700;
-    font-size: 30px;
-    bottom: 70px;
-    left: 40px;
-    border: 0;
-    z-index: 9999;
-    width: 60px;
-    height: 60px;
-    line-height: 50px;
+@font-face {
+    font-family: Aref;
+    src: url('./assets/alfont_com_AlFont_com_NotoNastaliqUrdu-Regular.ttf');
 }
 
-#whatsapp .whtsapp:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 70px;
-    height: 70px;
-    background-color: #25ae57;
-    border-radius: 50%;
-    animation: pulse-border 1500ms ease-out infinite;
+.aref {
+    font-family: "Aref", sans-serif;
 }
 
-#whatsapp .whtsapp:focus {
-    border: none;
-    outline: none;
+.gill {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-@keyframes pulse-border {
-    0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        opacity: 1;
-    }
 
-    100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-        opacity: 0;
-    }
-}
+.heartbeat{-webkit-animation:heartbeat 1.5s ease-in-out infinite both;animation:heartbeat 1.5s ease-in-out infinite both}
+@-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
