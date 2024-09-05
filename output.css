@@ -833,8 +833,8 @@ video {
   height: 6rem;
 }
 
-.h-32{
-  height: 8rem;
+.h-36{
+  height: 9rem;
 }
 
 .h-6{
@@ -854,16 +854,12 @@ video {
   height: 100%;
 }
 
-.h-36{
-  height: 9rem;
+.h-44{
+  height: 11rem;
 }
 
-.h-3{
-  height: 0.75rem;
-}
-
-.h-40{
-  height: 10rem;
+.h-48{
+  height: 12rem;
 }
 
 .w-6{
@@ -1230,6 +1226,14 @@ video {
 
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -1750,6 +1754,10 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2037,11 +2045,6 @@ video {
   padding-right: 2rem;
 }
 
-.py-14{
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -2059,10 +2062,6 @@ video {
 
 .pb-4{
   padding-bottom: 1rem;
-}
-
-.pt-14{
-  padding-top: 3.5rem;
 }
 
 .pt-2{
@@ -2149,8 +2148,9 @@ video {
   line-height: 1.75rem;
 }
 
-.font-black{
-  font-weight: 900;
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold{
@@ -2627,7 +2627,7 @@ body {
 @font-face {
   font-family: Aref;
 
-  src: url('./assets/alfont_com_Hacen-Beirut-Hd-1.ttf');
+  src: url('./assets/alfont_com_HS-Ishraq-Regular.otf');
 }
 
 .aref {
@@ -2712,6 +2712,12 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:scale-105:hover{
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:bg-darkmint:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(138 163 117 / var(--tw-bg-opacity));
@@ -2776,8 +2782,27 @@ body {
     padding-bottom: 6rem;
   }
 
+  .md\:py-1{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .md\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .md\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .md\:pt-14{
     padding-top: 3.5rem;
+  }
+
+  .md\:pt-8{
+    padding-top: 2rem;
   }
 
   .md\:text-5xl{
